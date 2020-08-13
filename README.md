@@ -1,6 +1,6 @@
-# Electron TypeScript Quick Start
+# HID Headset Test
 
-> This template is based on the official [electron-quick-start](https://github.com/electron/electron-quick-start) repository (but with typescript + electron-builder)
+If you get "Module did not register" or "Compiled against a different Node.js version" errors after starting the app, this means a native module dependency was not built correctly. Let electron-builder rebuild it for you by running a `npm run dist-${platform}` command.
 
 ## How to use?
 

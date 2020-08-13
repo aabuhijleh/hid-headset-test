@@ -1,20 +1,20 @@
 {
-  "appId": "com.YOUR_COMPANY.YOUR_PRODUCT",
-  "productName": "YOUR_PRODUCT_NAME",
+  "appId": "com.test.hidheadset",
+  "productName": "Hid Headset Test",
   "directories": {
     "buildResources": "./build",
     "output": "./dist"
   },
   "asarUnpack": ["**/*.node"],
   "mac": {
-    "category": "public.app-category.YOUR_CATEGORY",
+    "category": "public.app-category.testing",
     "target": "dmg"
   },
   "linux": {
     "target": ["AppImage", "deb"]
   },
   "win": {
-    "appId": "YOUR_COMPANY.YOUR_PRODUCT",
+    "appId": "test.hidheadset",
     "target": "nsis"
   },
   "nsis": {
@@ -29,7 +29,7 @@
     "warningsAsErrors": false
   },
   "appx": {
-    "publisherDisplayName": "YOUR_COMPANY"
+    "publisherDisplayName": "test"
   },
   "buildDependenciesFromSource": true,
   "npmRebuild": true

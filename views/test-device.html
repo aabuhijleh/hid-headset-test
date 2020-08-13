@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/fomantic-ui-css/semantic.min.css"
+    />
+    <link rel="stylesheet" href="./test-device.css" />
+
+    <title>Hid Headset Test</title>
+  </head>
+  <body>
+    <h4>Host To Device Sent Data</h4>
+    <form id="hostToDeviceForm" class="ui form">
+      <div class="field">
+        <label>Host to Device Report ID</label>
+        <input
+          type="text"
+          id="hostToDeviceReportId"
+          name="hostToDeviceReportId"
+          placeholder="Report ID"
+        />
+      </div>
+      <div class="field">
+        <label>Host to Device Payload</label>
+        <input
+          type="text"
+          id="hostToDevicePayload"
+          name="hostToDevicePayload"
+          placeholder="Payload to send to the device. (0x01) for example, to offhook (answer)"
+        />
+      </div>
+      <button class="ui button" type="submit">Write</button>
+    </form>
+
+    <h4>Device To Host Received Data</h4>
+    <div id="deviceToHostData" class="ui black message"></div>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/fomantic-ui-css/semantic.min.js"></script>
+  </body>
+</html>

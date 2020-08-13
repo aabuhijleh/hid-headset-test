@@ -1,0 +1,8 @@
+body {
+  padding: 8px;
+}
+
+#deviceToHostData {
+  height: 240px;
+  overflow: scroll;
+}
