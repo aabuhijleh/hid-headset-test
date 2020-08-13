@@ -1,5 +1,7 @@
 # HID Headset Test
 
+![](readme/usage.gif)
+
 ## Prerequisites
 
 - Node.js v12 or higher should be installed on your machine
