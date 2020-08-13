@@ -1,6 +1,9 @@
 # HID Headset Test
 
-If you get "Module did not register" or "Compiled against a different Node.js version" errors after starting the app, this means a native module dependency was not built correctly. Let electron-builder rebuild it for you by running a `npm run dist-${platform}` command.
+## Prerequisites
+
+- Node.js v12 or higher should be installed on your machine
+- [node-gyp](https://github.com/nodejs/node-gyp#installation)'s prerequisites need to be installed
 
 ## How to use?
 
@@ -22,6 +25,10 @@ $ npm run dist-linux
 $ npm run dist-mac
 $ npm run dist-windows
 ```
+
+## Troubleshooting
+
+If you get "Module did not register" or "Compiled against a different Node.js version" errors after starting the app, this means a native module dependency was not built correctly. Let electron-builder rebuild it for you by running a `npm run dist-${platform}` command.
 
 ## Directory Structure
 
